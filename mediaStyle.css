@@ -403,7 +403,9 @@
 }
 
 @media (max-width: 450px) {
-
+    .meDiv p{
+        font-size: 12px;
+    }
     .meDiv {
         width: 650px;
         height: 680px;

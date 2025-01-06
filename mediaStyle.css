@@ -402,11 +402,10 @@
     }
 }
 
-
 @media (max-width: 450px) {
 
     .meDiv {
         width: 650px;
-        height: 650px;
+        height: 680px;
     }
 }

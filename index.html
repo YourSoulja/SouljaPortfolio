@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="mediaStyle.css">
+</head>
+<body>
+    <header id="header">
+        <div class="headerH1">
+            <span class="text1">            
+                Solja <br>
+                Port-<br>
+                folio
+            </span>
+            <br>
+            <span class="text2">
+                Больше обо мне <br> на этом сайте.
+            </span>
+        </div>
+        <nav class="nav">
+            <input id="burger-toggle" type="checkbox">
+            <label for="burger-toggle">
+                <span></span>
+            </label>
+            <ul class="ulWow">
+                <li><a href="#me">Обо мне</a></li>
+                <li><a href="#hardSkills">HardSkills</a></li>
+                <li><a href="#h1SoftSkills">SoftSkills</a></li>
+                <li><a href="#footer">Контакты</a></li>
+                <li id="disNone"><a href="#" id="sBorder">S</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="img\boySlay.png" alt="boySlay" id="boySlay">
+        <div class="me" id="me">
+            <img  data-aos="fade-right" src="img\twoBoysCatana.png" alt="twoBoys" id="twoBoys">
+            <div data-aos="fade-down" class="meDiv" > 
+                <h1>Обо мне,</h1>
+                <p>
+                    Али, обучаюсь на направлении 
+                    ИСП(Информационные технологи и програмирование)
+                    Начал увлекаться самим программированием в марте
+                    2023, начинал с мобилок и back’а, но по итогу пришел
+                    к front’у, по одной из причин, что могу видеть свои
+                    работы в наяву.</p>
+                    <h1 id="h1Me">Хобби</h1>
+                    <p>
+                        Дизайнерством не люблю заниматься, из-за того что скучно и муторно,
+                        но с другой стороны создавать то, что тебе нравится и то, что у тебя
+                        в голове, всегда легче и приятнее. Зал, игры, сериалы.
+                    </p>
+            </div>
+        </div>
+
+        <div data-aos="fade-right" class="hardSkills" id="hardSkills">
+            <h1>Hard-Skills</h1>
+            <div class="containerLi">
+                <ul id="cards">
+                    <li class="card" id="card1">
+                        <div class="card-body">
+                            <h2>Языки  и frame work</h2>
+                            <p>JS - call back, promise, fetch DOM, JSON, localStorage</p>
+                            <p>React - JSX, props, хуки, state</p>
+                        </div>
+                    </li>
+                    <li class="card" id="card2">
+                        <div class="card-body">
+                            <h2>Не языки</h2>
+                            <p>HTML - теги, атрибуты, и прочее</p>
+                            <p>CSS - Grid, FlexBox, наследование, классы, SASS, адаптивная верстка.</p>
+                        
+                        </div>
+                    </li>
+                    <li class="card" id="card3">
+                        <div class="card-body">
+                            <h2>Дизайн</h2>
+                                <p>Познания FIGMA,</p>
+                                <p>Понимае UI,</p>
+                                <p>Умение подбирать
+                                    и сочитать палитру
+                                    цветов и шрифты</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <h1 data-aos="fade-up" id="h1SoftSkills">Soft-Skills</h1>
+        <div class="containerBlock">
+            <div id="block" data-aos="fade-up">
+                <div id="parallax">
+                    <div id="color" style="opacity: 0;"></div>
+                    <div id="text">
+                        <h1 class="heading">
+                            Коммуникация
+                        </h1>
+                        <p class="paragraph">
+                            Умею четко и понятно доносить свои мысли.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block" data-aos="fade-up">
+                <div id="parallax">
+                    <div id="color" style="opacity: 0;"></div>
+                    <div id="text">
+                        <h1 class="heading">
+                            Адаптивность
+                        </h1>
+                        <p class="paragraph">
+                            Быстро адаптируюсь 
+                            к новой среде 
+                            и изменениям                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block" data-aos="fade-up">
+                <div id="parallax">
+                    <div id="color" style="opacity: 0;"></div>
+                    <div id="text">
+                        <h1 class="heading">
+                            Коммуникабельность
+                        </h1>
+                        <p class="paragraph">
+                            Легко нахожу общий
+                            язык с новыми людьми                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <footer data-aos="fade-up" id="footer">
+            <div class="boyDiv" data-aos="fade-right">
+                <img src="img\boyStay.png" alt="boy">
+            </div>
+
+            <div class="footerUlDiv">
+                <ul>
+                    <li><a href="">Telegram</a></li>
+                    <li><a href="">VKontakte</a></li>
+                    <li><a href="">Instagram*</a></li>
+                    <p style="margin-right: 40px; margin-bottom: 40px;">*запрещенная соц.сеть на территории РФ</p>
+                    <a href="#header" id="up">↑</a>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="burger.js"></script>
+</body>
+</html>

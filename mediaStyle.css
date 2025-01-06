@@ -1,0 +1,409 @@
+@media (max-width: 1500px) { #disNone { display: none;  } }
+
+
+
+
+@media (max-width: 1400px) {
+    nav{ 
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    label {
+        z-index: 200;
+        position: relative;
+        display: block;
+        justify-content: end;
+        height: 25px;
+        width: 30px;
+    }
+
+    label::after, label::before, label span {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #e0dfe2;
+        transition: .3s;
+    }
+
+    label::before {
+        content: "";
+        top: 0;
+    }
+
+    label::after {
+        content: "";
+        bottom: 0;
+    }
+
+    label span { top: 11px; }
+
+    #burger-toggle:checked + label::after {
+        transform: rotate(45deg);
+        bottom: 10px;
+    }
+
+    #burger-toggle:checked + label::before {
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+
+    #burger-toggle:checked + label span {
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+
+    .ulWow {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #141414;
+        z-index: 1; 
+        flex-direction: column;
+        top: -100vh; 
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    .ulWow li { 
+        padding-top: 40px; 
+        padding-bottom: 10px;
+    }
+
+    #burger-toggle:checked + label + .ulWow { top: 0; }
+}
+
+
+
+
+
+
+@media (max-width: 1210px) {
+
+
+    #boySlay {
+        margin-top: 51px;
+        width: 500px; 
+        height: 250px; 
+    }
+
+    #twoBoys {
+        width: 250px; 
+        height: 400px; 
+    }
+
+    .me {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .meDiv {
+        width: 650px;
+        height: 400px;
+    }
+    
+    .meDiv h1{
+        margin: 15px;
+        font-size: 40px;
+    }
+    
+    .meDiv p{
+        font-size: 20px;
+        margin: 15px;
+    }
+
+    #h1Me{ margin-top: 70px; }
+
+    :root{
+        --cards: 3;
+        --cardHeight: 240px;
+        --cardTopPadding: 1.5em;
+        --cardMargin: 4vw;
+    }
+    
+    .containerLi {
+        width: 600px;
+        margin: 0 auto;
+    }
+    
+
+    .card-body p, 
+    .card-body h2 {
+        margin-top: 20px;
+    }
+
+    .card-body p{ font-size: 15px; }
+
+    .card-body h2{ font-size: 30px; }
+
+    .hardSkills h1{
+        margin-left: 30px;
+        margin-top: 15px;
+        font-size: 43px;
+    }
+
+    #h1SoftSkills{
+        font-size: 43px;
+    }
+
+    #block {
+        width: 200px;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    #parallax {
+        position: relative;
+        left: 0; 
+    }
+    
+    #text {
+        z-index: 2;
+        width: 100%; 
+    }
+
+    #text .heading {
+        color: #961212;
+        font-size: 22px;
+        margin-top: -70px;
+        
+    }
+    
+    .paragraph {
+        color: #4b4b4b;
+        margin-top: -70px;
+        font-size: 18px; 
+    }
+
+    footer{
+        margin-top: 40px;
+        height: 500px;
+    }
+    
+    .boyDiv img{
+        width: 350px;
+        height: 500px;
+    }
+    
+    
+    .footerUlDiv li{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-right: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footerUlDiv li a{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+@media (max-width: 905px) {
+
+    .meDiv {
+        width: 650px;
+        height: 500px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 680px) {
+    #twoBoys {
+        width: 400px; 
+        height: 250px; 
+    }
+
+    .hardSkills h1{ font-size: 30px; }
+
+    #h1SoftSkills{ font-size: 30px; }
+
+    :root{
+        --cards: 3;
+        --cardHeight: 120px;
+        --cardTopPadding: 1.5em;
+        --cardMargin: 4vw;
+    }
+    
+    .containerLi { width: 300px; } 
+    
+
+    .card-body p, 
+    .card-body h2 {
+        margin-top: 2px;
+    }
+
+    .card-body p{ font-size: 10px; }
+
+    .card-body h2{ font-size: 15px; }
+
+    .meDiv {
+        width: 650px;
+        height: 630px;
+    }
+
+
+    #block {
+        width: 300px;
+        height: 105px;
+    }
+    
+    
+    #text .heading {
+        margin-top: 1px;
+        margin-bottom: -120px;
+        font-size: 14px;
+    }
+    
+    .paragraph {
+        margin-top: 10px;
+        font-size: 10px; 
+        line-height: 1.5; 
+    }
+
+    footer{
+        height: 300px;
+    }
+    
+    .boyDiv img{
+        width: 150px;
+        height: 250px;
+    }
+    
+    .footerUlDiv li{
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .footerUlDiv li a{
+        font-size: 10px;
+    }
+
+    .footerUlDiv ul p{ font-size: 10px;}
+
+    #up{ font-size: 20px; }
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .headerH1 {
+        font-size: 40px;
+        padding-left: 50px;
+    }
+
+    .text1 {
+        letter-spacing: 4px;
+        position: relative;
+        font-size: 20px; 
+        animation: text3 3s 1;
+    }
+
+    .text2 {  
+        font-size: 10px; 
+        display: inline-block; 
+        white-space: nowrap; 
+    }
+
+    @keyframes text3 {
+        0% {
+            color: transparent;
+            margin-bottom: -20px;
+            letter-spacing: -10px;
+        }
+        30% { margin-bottom: -20px; }
+        85% {
+            letter-spacing: 4px;
+            margin-bottom: -20px;
+        }
+    }
+
+    
+    label::before {
+        content: "";
+        position: absolute;
+        top: 18px;
+    }
+    
+    label::after {
+        content: "";
+        position: absolute; 
+        bottom: 18px; 
+    }
+    
+    label {
+        z-index: 200;
+        position: relative;
+        display: flex; 
+        margin-left: auto;
+        justify-content: flex-end; 
+        height: 25px;
+        width: 30px;
+    }
+    
+    label::after, label::before, label span {
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: #e0dfe2;
+        transition: .3s;
+    }
+    
+    
+
+    
+
+    .meDiv {
+        background-color: rgba(18, 18, 15, 0.8); 
+        box-shadow: #292928 5px 5px 15px,
+        #292928 5px -5px 15px, 
+        #292928 -5px 5px 15px;
+        width: 650px;
+        height: 650px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    
+    .meDiv h1{
+        margin: 15px;
+        font-size: 30px;
+        color: #590707;
+        text-shadow: 0 0 50px #590707;
+        font-family:'Leotaro', Times, serif;
+    }
+    
+    .meDiv p{
+        font-size: 15px;
+        color: #A1A19C;
+        text-shadow: 0 0 20px #A1A19C;
+        margin: 15px;
+    }
+
+    #h1Me{ margin-top: 50px;}
+
+    #boySlay {
+        margin-top: 51px;
+        display: flex; 
+        width: 300px; 
+        height: 150px; 
+        margin-left: auto; 
+        animation: boySlayAnimation 2s 1;
+    }
+}

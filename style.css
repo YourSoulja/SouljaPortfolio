@@ -1,0 +1,478 @@
+@font-face {
+    font-family: 'Cormorant';
+    src: url('fonts/Cormorant-Regular.woff2');
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: url('fonts/Cormorant-Bold.woff2');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Arsenal';
+    src: url('fonts/Arsenal-Regular.woff2');
+}
+@font-face {
+    font-family: 'Leotaro';
+    src: url('fonts/leotaro-regular1.woff2');
+}
+@font-face {
+    font-family: 'AKONY';
+    src: url('fonts/AKONY.woff2');
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    color: #CBCACF;
+    padding: 0;
+    margin: 0;
+}
+
+* a {
+    color: #CBCACF;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(img/backStar.jpg);
+    background-repeat: repeat; 
+
+}
+
+/* ----------------- header ----------------------- */
+
+
+.headerH1{
+    font-family: 'Leotaro', Times, serif;
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 20px;
+    text-shadow: 0 0 10px #A1A19C;
+    margin-top: 20px;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 0 20px; 
+}
+
+.text1 {
+    letter-spacing: 8px;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text2{ 
+    opacity: 0.8; 
+    animation: text2 5s 1;
+}
+
+
+
+nav {
+    margin-right: 550px;
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex; 
+    animation: naviAni 5s 1;
+}
+
+nav ul { display: flex; }
+
+nav li {
+    list-style: none;
+    display: flex; 
+}
+
+
+nav a{
+    text-shadow: 0 0 20px #A1A19C;
+    margin-left: 20px; 
+    height: 30px;
+    font-family: 'Cormorant', Times, serif;
+    transition: .7s;
+}
+
+nav a:hover{
+    border-radius: 50px;
+    padding: 8px;
+    padding-bottom: 5px;
+    color: #590707;
+    font-weight: bold;
+    background-color: #A1A19C;
+    box-shadow: #292928 5px 5px 15px,
+    #292928 5px -5px 15px, 
+    #292928 -5px 5px 15px;
+}
+
+.nav ul {
+    display: flex;
+    transition: .5s;
+}
+
+label { display: none; }
+
+#sBorder {
+    margin-left: 150px;
+    margin-right: -100px;
+    margin-top: -6px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 3px solid white;
+    font-family: 'Akony', Times, serif; 
+    width: 35px; 
+    height: 35px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+#burger-toggle { display: none; }
+
+#sBorder:hover{
+    color: #590707;
+    background-color: #A1A19C;
+    border-color: transparent;
+}
+
+/* ----------------- main --------------------- */
+
+
+/* divMe */
+
+
+#boySlay {
+    margin-top: 51px;
+    display: flex; 
+    width: 1000px; 
+    height: 500px; 
+    margin-left: auto; 
+    animation: boySlayAnimation 2s 1;
+}
+
+.text1{ font-size: 80px; }
+
+#twoBoys {
+    margin-left: 50px;
+    display: flex; 
+    width: 500px; 
+    height: 800px; 
+    margin-right: auto;
+}
+
+.me {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#h1Me{ margin-top: 150px;}
+
+.meDiv {
+    background-color: rgba(18, 18, 15, 0.8); 
+    box-shadow: #292928 5px 5px 15px,
+    #292928 5px -5px 15px, 
+    #292928 -5px 5px 15px;
+    width: 1050px;
+    height: 811px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.meDiv h1{
+    margin: 15px;
+    font-size: 80px;
+    color: #590707;
+    text-shadow: 0 0 50px #590707;
+    font-family:'Leotaro', Times, serif;
+}
+
+.meDiv p{
+    font-size: 30px;
+    color: #A1A19C;
+    text-shadow: 0 0 20px #A1A19C;
+    margin: 15px;
+}
+
+/* HardSkills */
+
+
+
+
+.hardSkills h1{
+    font-family:'Leotaro', Times, serif;
+    margin-left: 30px;
+    margin-top: -25px;
+    color: #DACCB6;
+    text-shadow: 0 0 50px #DACCB6;
+    font-size: 96px;
+}
+
+:root{
+    --cards: 3;
+    --cardHeight: 570px;
+    --cardTopPadding: 1.5em;
+    --cardMargin: 4vw;
+}
+
+.containerLi {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#cards {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(var(--cards), var(--cardHeight));
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+}
+
+#card1{ --index: 1; }
+#card2{ --index: 2; }
+#card3{ --index: 3; }
+
+.card {
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+#card1 .card-body{
+    background-color: rgba(18, 18, 15, 0.3); 
+    box-shadow: #292928 5px 5px 15px,
+    #292928 5px -5px 15px, 
+    #292928 -5px 5px 15px;
+}
+
+#card2 .card-body{
+    background-color: rgba(18, 18, 15, 0.8); 
+    box-shadow: #292928 5px 5px 15px,
+    #292928 5px -5px 15px, 
+    #292928 -5px 5px 15px;
+}
+
+#card3 .card-body{
+    background-color: rgba(18, 18, 15, 0.8); 
+    box-shadow: #292928 5px 5px 15px,
+    #292928 5px -5px 15px, 
+    #292928 -5px 5px 15px;
+}
+
+.card-body {
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 0 rgb(0,0,0,0.8);
+    height: var(--cardHeight);
+    color: #ffffff;
+}
+
+.card-body p, 
+.card-body h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #A1A19C;
+    text-shadow: 0 0 20px #A1A19C;
+}
+
+.card-body h2{
+    font-size: 60px;
+}
+
+.card-body p{
+    font-size: 30px;
+}
+
+.containerBlock {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+/* SoftSkills */
+
+
+
+#h1SoftSkills{
+    font-family:'Leotaro', Times, serif;
+        color: #DACCB6;
+        font-size: 96px;
+        text-shadow: 0 0 50px #DACCB6;
+        text-align: center; 
+}
+
+#block {
+    border-radius: 30px; 
+    width: 400px;
+    border: 2px solid #292928;
+    margin: 20px; 
+    height: 300px;
+    text-align: center;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 
+        background 0.5s ease, 
+        border-radius 0.5s ease, 
+        box-shadow 0.5s ease, 
+        opacity 0.5s ease;
+    overflow: hidden;
+    background-color: rgba(18, 18, 15, 0.9); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+#block:hover{
+    background-color: #A1A19C;
+    border-radius: 50px;
+    opacity: 1;
+    box-shadow: 0 0 100px #A1A19C;
+}
+
+
+#text {
+    position: relative;
+    z-index: 2;
+    width: 100%; 
+    text-align: center; 
+    transform-style: preserve-3d;
+}
+
+#text .heading {
+    width: 100%; 
+    height: 120px;
+    border-top-right-radius: 20px; 
+    border-top-left-radius: 20px;
+    color: #590707;
+    opacity: .8;
+    font-size: 40px;
+    padding-top: 30px; 
+    font-family: 'Cormorant', Courier, monospace;
+}
+
+.paragraph {
+    text-align: center;
+    color: #292928;
+    font-size: 28px; 
+    padding: 20px; 
+    font-family: 'Leotaro', Courier, monospace;
+}
+
+
+
+
+
+/* ----------------- footer ------------------------- */
+footer{
+    margin-top: 40px;
+    box-shadow: #141414 5px 5px 15px,
+    #141414 5px -5px 15px, 
+    #141414 -5px 5px 15px;
+    height: 500px;
+    background-color: rgba(18, 18, 15, 0.8); 
+    text-align: end;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.boyDiv img{
+    width: 350px;
+    height: 500px;
+}
+
+.footerUlDiv{
+    margin-left: auto;
+    justify-self: end;
+
+}
+
+.footerUlDiv li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-right: 40px;
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footerUlDiv li a{
+    padding: 15px;
+    font-size: 40px;
+    transition: .7s;
+    position: relative; 
+}
+
+.footerUlDiv a:hover{
+    padding: 10px;
+    font-size: 35px;
+    text-shadow: 0 0 20px #DACCB6;
+    color: #daccb6;
+    border-radius: 50px;
+    background-color: #590707;
+    box-shadow: 3px 3px 12px #212121 inset,
+    3px 3px 12px #212121;
+}
+
+#up{
+    transition: .7s;
+    margin-right: 50px; 
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+/* ----------------- Анимации ---------------- */
+
+@keyframes text {
+    0% {
+        color: transparent;
+        margin-bottom: -40px;
+        letter-spacing: -30px;
+    }
+    30%{ margin-bottom: -40px; }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+@keyframes text2 {
+    0% { opacity: 0; }
+    50%{ opacity: 1; }
+    100%{ opacity: 0.8; }
+}
+
+@keyframes naviAni{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+
+@keyframes boySlayAnimation {
+    0% {
+        margin-right: 500px;
+        opacity: 0;
+    }
+    100%{
+        margin-right: 0px;
+        opacity: 1;
+    }
+}

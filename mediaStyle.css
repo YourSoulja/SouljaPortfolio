@@ -403,10 +403,10 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
 
     .meDiv {
         width: 650px;
-        height: 700px;
+        height: 650px;
     }
 }
